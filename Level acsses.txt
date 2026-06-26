@@ -1,0 +1,54 @@
+In AddEmp table, the roles start from number 1 to 5.
+
+The following is an explanation of access levels.
+
+Role-Based Access Control (RBAC) Matrix
+Level 1: Chief Executive Officer (CEO)
+Role Title: Super Administrator
+
+Permissions:
+
+Holds full and absolute authority across all administrative and technical aspects of the system with zero restrictions.
+
+Level 2: Deputy CEO / General Manager
+Role Title: Advanced Administrator
+
+Permissions:
+
+Holds all operational and administrative privileges across the system.
+
+Sole Restriction: Not authorized to permanently delete employee accounts (to ensure data integrity).
+
+Level 3: Department Head
+Role Title: Department Manager
+
+Permissions:
+
+Task Management: Can assign tasks directly to employees within their own department. Cross-departmental task assignments strictly require prior approval from the respective Department Head.
+
+Account Management: Authorized to suspend or deactivate accounts of employees within their department only.
+
+Data & Analytics: Access to dashboards and reports is strictly restricted to their own department's analytics.
+
+Access Promotion: Authorized to elevate an employee's access level up to Level 3 maximum.
+
+Level 4: Sub-Department Supervisor
+Role Title: Operations Supervisor
+
+Permissions:
+
+Data & Analytics: Granted View-Only access to the analytics and reports of their specific sub-department.
+
+Task Management: Authorized to create and assign tasks to employees within their sub-department.
+
+Restrictions: No authority to delete, deactivate, or add employees. User provisioning (adding employees) must be requested through the Department Head (Level 3) or higher management.
+
+Level 5: Executive Employee
+Role Title: End User
+
+Permissions:
+
+Task Reception: Role is limited to receiving, executing, and updating the status of assigned tasks.
+
+Holds no administrative privileges, cannot modify system configurations, and has no access to departmental analytics.
+ 
